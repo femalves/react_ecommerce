@@ -13,43 +13,48 @@ class Directory extends Component {
           title: "Necklaces",
           imageUrl:
             "https://images.unsplash.com/photo-1574244165829-9e468da599fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=2280&q=80",
-          id: 1
+          id: 1,
+          linkUrl: "necklaces",
         },
         {
           title: "Bracelets",
           imageUrl:
             "https://images.unsplash.com/photo-1530816612582-cc86fa2f4ed6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80",
-          id: 2
+          id: 2,
+          linkUrl: "",
         },
         {
           title: "Earrings",
           imageUrl:
-            "https://images.unsplash.com/photo-1495846770511-520ab58b957d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80",
-          id: 3
+            "https://images.unsplash.com/photo-1475179593777-bd12fd56b85d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2552&q=80",
+          id: 3,
+          linkUrl: "",
         },
         {
           title: "Rings",
           imageUrl:
             "https://images.unsplash.com/photo-1450297166380-cabe503887e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2545&q=80",
           size: "large",
-          id: 4
+          id: 4,
+          linkUrl: "",
         },
         {
           title: "Other",
           imageUrl:
             "https://images.unsplash.com/photo-1574173798137-311ed747d574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80",
           size: "large",
-          id: 5
-        }
-      ]
+          id: 5,
+          linkUrl: "",
+        },
+      ],
     };
   }
 
   render() {
     return (
       <div className="directory-menu">
-        {this.state.sections.map(({ title, imageUrl, id, size }) => (
-          <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
+        {this.state.sections.map(({ id, ...otherSectionProps }) => (
+          <MenuItem key={id} {...otherSectionProps} />
         ))}
       </div>
     );
