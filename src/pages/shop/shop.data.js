@@ -1,32 +1,36 @@
 const SHOP_DATA = [
   {
     id: 1,
-    title: "Hats",
-    routeName: "hats",
+    title: "Necklaces",
+    routeName: "necklaces",
     items: [
       {
         id: 1,
-        name: "Brown Brim",
-        imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
-        price: 25,
+        name: "White Beaded Necklace",
+        imageUrl:
+          "https://images.unsplash.com/photo-1560233144-905d47165782?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80",
+        price: 99,
       },
       {
         id: 2,
-        name: "Blue Beanie",
-        imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
-        price: 18,
+        name: "Long Golden Pendant Necklace",
+        imageUrl:
+          "https://images.unsplash.com/photo-1558882268-15aa056d885f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+        price: 79,
       },
       {
         id: 3,
-        name: "Brown Cowboy",
-        imageUrl: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        name: "Gold and Silver Pendant Necklace",
+        imageUrl:
+          "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
         price: 35,
       },
       {
         id: 4,
-        name: "Grey Brim",
-        imageUrl: "https://i.ibb.co/RjBLWxB/grey-brim.png",
-        price: 25,
+        name: "Thick Golden Chain (Pendant not included)",
+        imageUrl:
+          "https://images.unsplash.com/photo-1542779632-539b861ee8f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+        price: 120,
       },
       {
         id: 5,
@@ -62,8 +66,8 @@ const SHOP_DATA = [
   },
   {
     id: 2,
-    title: "Sneakers",
-    routeName: "sneakers",
+    title: "Bracelets",
+    routeName: "bracelets",
     items: [
       {
         id: 1,
@@ -117,8 +121,8 @@ const SHOP_DATA = [
   },
   {
     id: 3,
-    title: "Jackets",
-    routeName: "jackets",
+    title: "Earrings",
+    routeName: "earrings",
     items: [
       {
         id: 1,
@@ -154,8 +158,8 @@ const SHOP_DATA = [
   },
   {
     id: 4,
-    title: "Womens",
-    routeName: "womens",
+    title: "Rings",
+    routeName: "rings",
     items: [
       {
         id: 1,
@@ -203,8 +207,8 @@ const SHOP_DATA = [
   },
   {
     id: 5,
-    title: "Mens",
-    routeName: "mens",
+    title: "Other",
+    routeName: "other",
     items: [
       {
         id: 1,
