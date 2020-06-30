@@ -1,64 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
 
 import MenuItem from "../menu-item/menu-item";
-
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectDirectorySections } from "../../redux/directory/directory.selectors";
 import "./directory.scss";
-class Directory extends Component {
-  constructor() {
-    super();
 
-    this.state = {
-      sections: [
-        {
-          title: "Necklaces",
-          imageUrl:
-            "https://images.unsplash.com/photo-1574244165829-9e468da599fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=2280&q=80",
-          id: 1,
-          linkUrl: "necklaces",
-        },
-        {
-          title: "Bracelets",
-          imageUrl:
-            "https://images.unsplash.com/photo-1530816612582-cc86fa2f4ed6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80",
-          id: 2,
-          linkUrl: "",
-        },
-        {
-          title: "Earrings",
-          imageUrl:
-            "https://images.unsplash.com/photo-1475179593777-bd12fd56b85d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2552&q=80",
-          id: 3,
-          linkUrl: "",
-        },
-        {
-          title: "Rings",
-          imageUrl:
-            "https://images.unsplash.com/photo-1450297166380-cabe503887e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2545&q=80",
-          size: "large",
-          id: 4,
-          linkUrl: "",
-        },
-        {
-          title: "Other",
-          imageUrl:
-            "https://images.unsplash.com/photo-1574173798137-311ed747d574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80",
-          size: "large",
-          id: 5,
-          linkUrl: "",
-        },
-      ],
-    };
-  }
+const Directory = ({ sections }) => (
+  <div className="directory-menu">
+    {sections.map(({ id, ...otherSectionProps }) => (
+      <MenuItem key={id} {...otherSectionProps} />
+    ))}
+  </div>
+);
 
-  render() {
-    return (
-      <div className="directory-menu">
-        {this.state.sections.map(({ id, ...otherSectionProps }) => (
-          <MenuItem key={id} {...otherSectionProps} />
-        ))}
-      </div>
-    );
-  }
-}
+const mapStateToProps = createStructuredSelector({
+  sections: selectDirectorySections,
+});
 
-export default Directory;
+export default connect(mapStateToProps)(Directory);
