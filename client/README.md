@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
 
-## Available Scripts
+  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/femalves/react_ecommerce?style=flat-square" />
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/femalves/react_ecommerce?style=flat-square" />
+  <img alt="" src="https://img.shields.io/github/repo-size/femalves/react_ecommerce?style=flat-square" />
 
-In the project directory, you can run:
+  <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/femalves/react_ecommerce?style=flat-square" />
 
-### `yarn start`
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-blueviolet?style=flat-square">
+  <img alt="GitHub Issues" src="https://img.shields.io/github/issues/femalves/react_ecommerce?style=flat-square" />
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+___
+<br>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<img width="1275" alt="Screen Shot 2020-09-17 at 16 24 38" src="https://user-images.githubusercontent.com/9547354/93521466-7cf87880-f906-11ea-8d9f-f6df6daf2e14.png">
+<img width="1073" alt="Screen Shot 2020-09-17 at 16 34 04" src="https://user-images.githubusercontent.com/9547354/93521471-7f5ad280-f906-11ea-8c62-5c56b165b041.png">
+<img width="1270" alt="Screen Shot 2020-09-17 at 16 34 13" src="https://user-images.githubusercontent.com/9547354/93521482-81bd2c80-f906-11ea-99ae-ac8cc27a416b.png">
+<img width="1273" alt="Screen Shot 2020-09-17 at 16 34 32" src="https://user-images.githubusercontent.com/9547354/93521490-841f8680-f906-11ea-8f12-2147574ee675.png">
 
-### `yarn test`
+<img width="1279" alt="Screen Shot 2020-09-17 at 16 35 17" src="https://user-images.githubusercontent.com/9547354/93521510-897cd100-f906-11ea-81a6-8a48707d74ec.png">
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :computer: Tecnologies used
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- [React](https://pt-br.reactjs.org/)
+- [Stripe](https://stripe.com/docs/api)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### :nail_care: Styling
 
-### `yarn eject`
+- [SASS](https://sass-lang.com/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### :point_up: Frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Clone this repository
+$ git clone https://github.com/femalves/react_ecommerce
 
+# From the terminal, go to folder
+$ cd silverline-jewelry/client
+
+# Install dependencies
+$ npm install
+
+# Run in development mode
+$ npm start
+
+# Go to http://localhost:3000
+
+```
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## :memo: License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[MIT](LICENSE)
